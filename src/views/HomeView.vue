@@ -7,15 +7,16 @@ function yandexInit() {
   window.ymaps.ready();
 }
 onMounted(() => {
-  // не обязательно, но в доке описано
   window.ymaps.ready(function () {
     var myMap = new ymaps.Map("YMapsID", {
       center: [55.76, 37.64],
       zoom: 10
     });
   });
+  // не обязательно, но в доке описано
   yandexInit()
 })
+
 function yandexSuggest(text) {
   // query параметры
   let options = {
